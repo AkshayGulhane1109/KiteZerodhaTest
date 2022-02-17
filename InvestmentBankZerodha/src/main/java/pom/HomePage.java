@@ -22,7 +22,7 @@ public class HomePage {
 	 @FindBy (xpath = "//button[text()='B ']")
 	   private WebElement buyButton;
 	 
-	 @FindBy (xpath = "//input[@id='radio-772']")
+	 @FindBy (xpath = "(//form[@data-drag-boundary='true']//label)[7]")
 	   private WebElement intraday;
 	 
 	 @FindBy (xpath = "(//input[@type='number'])[1]")
@@ -31,10 +31,13 @@ public class HomePage {
 	 @FindBy (xpath = "(//input[@type='number'])[2]")
 	   private WebElement price;
 	 
-	 @FindBy (xpath = "//input[@id='radio-778']")
+	 @FindBy (xpath = "(//input[@type='number'])[3]")
+	   private WebElement triggerPrice;
+	 
+	 @FindBy (xpath = "(//form[@data-drag-boundary='true']//label)[12]")
 	   private WebElement marketOrder;
 	 
-	 @FindBy (xpath = "//input[@id='radio-781']")
+	 @FindBy (xpath = "(//form[@data-drag-boundary='true']//label)[14]")
 	   private WebElement stopLoss;
 	 
 	 @FindBy (xpath = "//button[text()='Cancel ']")
@@ -118,12 +121,20 @@ public class HomePage {
 		   qty.sendKeys(qtyValue);
 	   }
 	   
-	   public void enterPrice(String qtyValue) throws InterruptedException
+	   public void enterPrice(String priceOfShare) throws InterruptedException
 	   {
 		   price.clear();
 		   Thread.sleep(1000);
-		   price.sendKeys(qtyValue);
+		   price.sendKeys(priceOfShare);
 	   }
+	   
+	   public void enterTriggerPrice(String triggerPriceOfShare) throws InterruptedException
+	   {
+		   triggerPrice.clear();
+		   Thread.sleep(1000);
+		   triggerPrice.sendKeys(triggerPriceOfShare);
+	   }
+	   
 	   
 	   public void clickOnMarketOrder() throws InterruptedException
 	   {

@@ -44,13 +44,13 @@ public class Utility {
 
 	}
 
-	public static void takeSnapshot(WebDriver driver, int testID) throws IOException { 
+	public static void takeSnapshot(WebDriver driver, int TestID) throws IOException { 
 		 DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH_mm_ss");
 		  LocalDateTime now = LocalDateTime.now();
 
 	File src=((TakesScreenshot)driver).getScreenshotAs (OutputType.FILE);
 
-	File dest=new File("E:\\Software Testing\\Screenshots\\Test "+testID+" "+dtf.format(now)+".jpg");
+	File dest=new File("E:\\Software Testing\\Screenshots\\Test "+TestID+" "+dtf.format(now)+".jpg");
 
 	
 
