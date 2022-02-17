@@ -22,6 +22,9 @@ public class HomePage {
 	 @FindBy (xpath = "//button[text()='B ']")
 	   private WebElement buyButton;
 	 
+	 @FindBy (xpath = "//label[text()='Cover']")
+	   private WebElement coverOrder;
+	 
 	 @FindBy (xpath = "(//form[@data-drag-boundary='true']//label)[7]")
 	   private WebElement intraday;
 	 
@@ -106,6 +109,12 @@ public class HomePage {
 	   {
 		  
 		   actions.moveToElement(buyButton).click().build().perform();
+	   }
+	   
+	   public void clickOnCoverOrder() throws InterruptedException
+	   {
+		   coverOrder.click();
+		   
 	   }
 	   
 	   public void clickOnIntraDay() throws InterruptedException
