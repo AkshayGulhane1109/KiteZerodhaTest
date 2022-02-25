@@ -19,50 +19,50 @@ public class HomePage {
 	 @FindBy (xpath = "//ul[@class='omnisearch-results']//li[1]")
 	   private WebElement shareResult;
 	 
-	 @FindBy (xpath = "//button[text()='B ']")
+	 @FindBy (xpath ="//button[text()='B ']")
 	   private WebElement buyButton;
 	 
-	 @FindBy (xpath = "//label[text()='Cover']")
+	 @FindBy (xpath ="//label[text()='Cover']")
 	   private WebElement coverOrder;
 	 
-	 @FindBy (xpath = "(//form[@data-drag-boundary='true']//label)[7]")
+	 @FindBy (xpath ="(//form[@data-drag-boundary='true']//label)[7]")
 	   private WebElement intraday;
 	 
-	 @FindBy (xpath = "(//input[@type='number'])[1]")
+	 @FindBy (xpath ="(//input[@type='number'])[1]")
 	   private WebElement qty;
 	 
-	 @FindBy (xpath = "(//input[@type='number'])[2]")
+	 @FindBy (xpath ="(//input[@type='number'])[2]")
 	   private WebElement price;
 	 
-	 @FindBy (xpath = "(//input[@type='number'])[3]")
+	 @FindBy (xpath ="(//input[@type='number'])[3]")
 	   private WebElement triggerPrice;
 	 
 	 @FindBy (xpath = "(//form[@data-drag-boundary='true']//label)[12]")
 	   private WebElement marketOrder;
 	 
-	 @FindBy (xpath = "(//form[@data-drag-boundary='true']//label)[14]")
+	 @FindBy (xpath ="(//form[@data-drag-boundary='true']//label)[14]")
 	   private WebElement stopLoss;
 	 
-	 @FindBy (xpath = "//button[text()='Cancel ']")
+	 @FindBy (xpath ="//button[text()='Cancel ']")
 	   private WebElement cancelOrder;
 	 
-	 @FindBy (xpath = "//span[text()='Holdings']")
+	 @FindBy (xpath ="//span[text()='Holdings']")
 	   private WebElement holdings;
 	  
-	  @FindBy (xpath = "//span[text()='Positions']")
+	  @FindBy (xpath ="//span[text()='Positions']")
 	  private WebElement positions;
 	  
-	  @FindBy (xpath = "//span[text()='Funds']")
+	  @FindBy (xpath ="//span[text()='Funds']")
 	  private WebElement funds;
 	  
 	  @FindBy (xpath = "//span[@class='nickname']")
 	  private WebElement dematHolderName;
 	  
 	  
-	  @FindBy (xpath = "//span[text()='Apps']")
+	  @FindBy (xpath ="//span[text()='Apps']")
 	  private WebElement apps;
 	  
-	  @FindBy (xpath = "//span[@class='user-id']")
+	  @FindBy (xpath ="//span[@class='user-id']")
 	  private WebElement account ;
 	  
 	  @FindBy (xpath = "//a[text()=' Logout']")
